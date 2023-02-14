@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             Shell.NavBarIsVisible="False"
+             x:Class="FoodAPP.View.Signin">
+    <Grid BackgroundColor="Orange">
+        <Grid HorizontalOptions="Center" VerticalOptions="Center" RowDefinitions="*,*,*,*,*,*">
+            <VerticalStackLayout>
+                <Label Grid.Row="0" Grid.Column="0" Text="User Name" FontSize="30" FontAttributes="Bold" Margin="0, 15,0,15" TextColor="White"/>
+                <Entry Placeholder="Enter User Name" PlaceholderColor="White" TextColor="White" FontSize="20" BackgroundColor="Transparent" HeightRequest="40" WidthRequest="250"/>
+                <Line HeightRequest="2" BackgroundColor="White"/>
+                <Label Grid.Row="2" Grid.Column="0" Text="Password" FontSize="30" FontAttributes="Bold" Margin="0,15,0,15" TextColor="White"/>
+                <Entry Placeholder="Enter Password" IsPassword="True" PlaceholderColor="White" TextColor="White" FontSize="20" BackgroundColor="Transparent" WidthRequest="250"/>
+                <Line HeightRequest="2" BackgroundColor="White"/>
+                <HorizontalStackLayout>
+                    <Label Text="Sign In" TextColor="White" VerticalOptions="Center" HorizontalOptions="Start" Margin="0,30,30,30" Padding="20" FontSize="30" FontAttributes="Bold"/>
+                    <Button Text="❯" FontSize="35" TextColor="White" BackgroundColor="Transparent" CornerRadius="50" WidthRequest="70" HeightRequest="70" HorizontalOptions="End" VerticalOptions="Center" BorderWidth="4" BorderColor="White"></Button>
+                </HorizontalStackLayout>
+            </VerticalStackLayout>
+        </Grid>
+    </Grid>
+</ContentPage>
