@@ -15,14 +15,14 @@ namespace FoodAPP.Database
         public DataBase(string db)
         {
             _database = new SQLiteAsyncConnection(db);
-            _database.CreateTableAsync<LoginModel>().Wait();
+            _database.CreateTableAsync<Signin>().Wait();
         }
 
-        public Task<LoginModel> GetLoginDataAsync(string username)
+        public Task<Signin> GetLoginDataAsync(string username)
         {
-            return _database.Table<LoginModel>().Where(i => i.UserName ==username).FirstOrDefaultAsync();
+            return _database.Table<Signin>().Where(i => i.UserName ==username).FirstOrDefaultAsync();
         }
-        public Task SaveLoginDataAsync(LoginModel logdata) 
+        public Task SaveLoginDataAsync(Signin logdata) 
         {
             return _database.InsertAsync(logdata);        
         }
