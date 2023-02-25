@@ -3,28 +3,33 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using FoodAPP.Model;
+using FoodAPP;
 using SQLite;
 
-namespace FoodAPP.Database
+namespace FoodAPP
 {
-    internal class DataBase
+    public class DataBase
     {
-        readonly SQLiteAsyncConnection _database;
+        public readonly SQLiteAsyncConnection _database;
 
-        public DataBase(string db)
+        public DataBase(string dbPath)
         {
-            _database = new SQLiteAsyncConnection(db);
-            _database.CreateTableAsync<Signin>().Wait();
+            _database = new SQLiteAsyncConnection(dbPath);
+            _database.CreateTableAsync<SignupModel>().Wait();
         }
 
-        public Task<Signin> GetLoginDataAsync(string username)
+        public Task<SignupModel> GetLoginDataAsync(string email)
         {
-            return _database.Table<Signin>().Where(i => i.UserName ==username).FirstOrDefaultAsync();
+            return _database.Table<SignupModel>().Where(i => i.Email == email).FirstOrDefaultAsync();
         }
-        public Task SaveLoginDataAsync(Signin logdata) 
+
+        public Task<int> SaveLoginDataAsync(SignupModel loginData)
         {
-            return _database.InsertAsync(logdata);        
+            return _database.InsertAsync(loginData);
+        }
+        public Task<int> DeleteUser(SignupModel signupdata)
+        {
+            return _database.DeleteAsync(signupdata);
         }
     }
 }

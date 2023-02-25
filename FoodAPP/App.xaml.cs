@@ -8,4 +8,17 @@ public partial class App : Application
 
 		MainPage = new AppShell();
 	}
+    static DataBase database;
+
+    public static DataBase Database
+    {
+        get
+        {
+            if (database == null)
+            {
+                database = new DataBase(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "SQLite.db"));
+            }
+            return database;
+        }
+    }
 }

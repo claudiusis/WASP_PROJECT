@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace FoodAPP.Model
+namespace FoodAPP
 {
     internal class Page1Model
     {

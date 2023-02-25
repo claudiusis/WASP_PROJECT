@@ -34,6 +34,12 @@ build_metadata.AdditionalFiles.ManifestResourceName = FoodAPP.Resources.Styles.S
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
 
+[C:/Users/Nikitos/Desktop/FoodAPP/FoodAPP/View/Fridge.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = FoodAPP.View.Fridge.xaml
+build_metadata.AdditionalFiles.TargetPath = View\Fridge.xaml
+build_metadata.AdditionalFiles.RelativePath = View\Fridge.xaml
+
 [C:/Users/Nikitos/Desktop/FoodAPP/FoodAPP/View/Page1.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = FoodAPP.View.Page1.xaml

@@ -3,10 +3,21 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:viewmodel="clr-namespace:FoodAPP.ViewModel"
              x:Class="FoodAPP.View.Start">
-    <VerticalStackLayout VerticalOptions="Center">
-        <Label Text="WELCOME TO FoodAPP" MaximumWidthRequest="150" FontSize="26" HorizontalOptions="Center" VerticalOptions="Center" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"></Label>
-        <Label Text="Let's start!" HorizontalOptions="Center" VerticalOptions="Center"/>
-        <Button Text="Sign In" Margin="20" HorizontalOptions="Center" VerticalOptions="Center" Command="{Binding SignInCommand}"/>
-        <Button Text="Sign Up" Margin="20" HorizontalOptions="Center" VerticalOptions="Center" Command="{Binding SignUpCommand}"/>
-    </VerticalStackLayout>
+    <Grid BackgroundColor="#f3f5d0">
+        <VerticalStackLayout VerticalOptions="Center">
+            <Label HorizontalOptions="Center" VerticalOptions="Center" Text="WELCOME" FontSize="45" FontAttributes="Bold" TextColor="#bc6c25"/>
+            <Label HorizontalOptions="Center" VerticalOptions="Center" Text="to" FontSize="35" TextColor="#bc6c25"/>
+            <Label HorizontalOptions="Center" VerticalOptions="Center" Margin="0,0,20,0">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="Food" TextColor="#d4a373" FontAttributes="Bold" FontSize="45"/>
+                        <Span Text="APP" TextColor="DarkGreen" FontAttributes="Bold" FontSize="45"/>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+            <Image Source="Images/startimg.jpg" Aspect="AspectFit"/>
+            <Button Text="Sign In" FontAttributes="Bold" Margin="20" HorizontalOptions="Center" VerticalOptions="Center" Command="{Binding SignInCommand}" BackgroundColor="DarkGreen" FontSize="31" CornerRadius="35"/>
+            <Button Text="Sign Up" FontAttributes="Bold" Margin="20" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Command="{Binding SignUpCommand}" BackgroundColor="Green" FontSize="30" CornerRadius="35"/>
+        </VerticalStackLayout>
+    </Grid>
 </ContentPage>

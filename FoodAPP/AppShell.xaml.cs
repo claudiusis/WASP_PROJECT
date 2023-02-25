@@ -1,4 +1,5 @@
-﻿using FoodAPP.View;
+﻿using FoodAPP;
+using FoodAPP.View;
 using Plugin.LocalNotification;
 
 namespace FoodAPP;
@@ -10,6 +11,7 @@ public partial class AppShell : Shell
         InitializeComponent();
         Routing.RegisterRoute(nameof(Signin), typeof(Signin));
         Routing.RegisterRoute(nameof(Signup), typeof(Signup));
+        Routing.RegisterRoute(nameof(Fridge), typeof(Fridge));
         DateTime date = new DateTime(2023, 02, 11, 16, 47, 35, 00);
         var request = new NotificationRequest
         {

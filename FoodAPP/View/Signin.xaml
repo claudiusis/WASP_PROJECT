@@ -1,20 +1,52 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewmodel="clr-namespace: FoodAPP.ViewModel"
+             xmlns:model="clr-namespace: FoodAPP"
              Shell.NavBarIsVisible="False"
              x:Class="FoodAPP.View.Signin">
-    <Grid BackgroundColor="Orange">
+    <Grid BackgroundColor="White">
         <Grid HorizontalOptions="Center" VerticalOptions="Center" RowDefinitions="*,*,*,*,*,*">
             <VerticalStackLayout>
-                <Label Grid.Row="0" Grid.Column="0" Text="User Name" FontSize="30" FontAttributes="Bold" Margin="0, 15,0,15" TextColor="White"/>
-                <Entry Placeholder="Enter User Name" PlaceholderColor="White" TextColor="White" FontSize="20" BackgroundColor="Transparent" HeightRequest="40" WidthRequest="250"/>
-                <Line HeightRequest="2" BackgroundColor="White"/>
-                <Label Grid.Row="2" Grid.Column="0" Text="Password" FontSize="30" FontAttributes="Bold" Margin="0,15,0,15" TextColor="White"/>
-                <Entry Placeholder="Enter Password" IsPassword="True" PlaceholderColor="White" TextColor="White" FontSize="20" BackgroundColor="Transparent" WidthRequest="250"/>
-                <Line HeightRequest="2" BackgroundColor="White"/>
+                <Frame CornerRadius="65" BackgroundColor="DarkGreen" WidthRequest="128" HeightRequest="128" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" HasShadow="True" Margin="0,0,0,30">
+                    <Image Source="Images/avatar.png"></Image>
+                </Frame>
+                <Label Grid.Row="0" Grid.Column="0" Text="Mail" FontSize="30" FontAttributes="Bold" Margin="10,10,0,15" TextColor="DarkGreen"/>
+                <StackLayout Orientation="Horizontal">
+                    <Frame ZIndex="1" HasShadow="True" BorderColor="White" HeightRequest="65" WidthRequest="65" CornerRadius="40">
+                        <Image Source="Images/arroba.png" WidthRequest="32" HeightRequest="32"/>
+                    </Frame>
+                    <Frame CornerRadius="45" BorderColor="White" HasShadow="True" HorizontalOptions="FillAndExpand" HeightRequest="60" Margin="-35,0,0,0" Padding="0">
+                        <Entry Placeholder="Enter mail" PlaceholderColor="LightGreen" TextColor="#38b000" FontSize="20" Margin="35,0,30,0" VerticalOptions="Center" Text="{Binding UserName}"/>
+                    </Frame>
+                </StackLayout>
+                <Label Grid.Row="0" Grid.Column="0" Text="Password" FontSize="30" FontAttributes="Bold" Margin="10,10,0,15" TextColor="DarkGreen"/>
+                <StackLayout Orientation="Horizontal">
+                    <Frame ZIndex="1" HasShadow="True" BorderColor="White" HeightRequest="65" WidthRequest="65" CornerRadius="40">
+                        <Image Source="Images/lock.png" WidthRequest="32" HeightRequest="32"/>
+                    </Frame>
+                    <Frame CornerRadius="45" BorderColor="White" HasShadow="True" HorizontalOptions="FillAndExpand" HeightRequest="60" Margin="-35,0,0,0" MaximumWidthRequest="300" Padding="0">
+                        <Grid ColumnDefinitions="*,34">
+                            <Entry x:Name="PasswordEntr" Placeholder="Enter Password" PlaceholderColor="LightGreen" IsPassword="True" TextColor="#38b000" FontSize="22" Margin="35,0,30,0" VerticalOptions="Center" Text="{Binding Password}"/>
+                            <Image x:Name="Eye" Grid.Column="1" Source="Images/eye.png" IsVisible="True" HorizontalOptions="Start" VerticalOptions="Center">
+                                <Image.GestureRecognizers>
+                                    <TapGestureRecognizer Tapped="OnEyeTapped" NumberOfTapsRequired="1"></TapGestureRecognizer>
+                                </Image.GestureRecognizers>
+                            </Image>
+                        </Grid>
+                    </Frame>
+                </StackLayout>
                 <HorizontalStackLayout>
-                    <Label Text="Sign In" TextColor="White" VerticalOptions="Center" HorizontalOptions="Start" Margin="0,30,30,30" Padding="20" FontSize="30" FontAttributes="Bold"/>
-                    <Button Text="❯" FontSize="35" TextColor="White" BackgroundColor="Transparent" CornerRadius="50" WidthRequest="70" HeightRequest="70" HorizontalOptions="End" VerticalOptions="Center" BorderWidth="4" BorderColor="White"></Button>
+                    <Label Text="SIGN IN" TextColor="DarkGreen" VerticalOptions="Center" HorizontalOptions="Start" Margin="0,65,65,60" Padding="0" FontSize="32" FontAttributes="Bold"/>
+                    <Button Text="❯" FontSize="45" TextColor="DarkGreen" BackgroundColor="Transparent" CornerRadius="50" WidthRequest="80" HeightRequest="80" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" BorderWidth="5" BorderColor="DarkGreen" Command="{Binding SigninCommand}"></Button>
+                </HorizontalStackLayout>
+                <HorizontalStackLayout>
+                    <Label Text="Don't have account?" TextColor="SandyBrown" FontSize="18" HorizontalOptions="Start" VerticalOptions="Center"/>
+                    <Label Text="Sign UP" TextColor="Green" FontSize="18" HorizontalOptions="End" VerticalOptions="Center" Margin="10,0,0,0">
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding SignupCommand}" NumberOfTapsRequired="1"></TapGestureRecognizer>
+                        </Label.GestureRecognizers>
+                    </Label>
                 </HorizontalStackLayout>
             </VerticalStackLayout>
         </Grid>

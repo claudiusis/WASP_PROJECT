@@ -8,6 +8,9 @@
     <DefaultDevice>pixel_5_-_api_33</DefaultDevice>
   </PropertyGroup>
   <ItemGroup>
+    <MauiXaml Update="View\Fridge.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
     <MauiXaml Update="View\Signup.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
