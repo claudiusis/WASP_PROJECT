@@ -17,7 +17,7 @@
                         <Image Source="Images/arroba.png" WidthRequest="32" HeightRequest="32"/>
                     </Frame>
                     <Frame CornerRadius="45" BorderColor="White" HasShadow="True" HorizontalOptions="FillAndExpand" HeightRequest="60" Margin="-35,0,0,0" Padding="0">
-                        <Entry Placeholder="Enter mail" PlaceholderColor="LightGreen" TextColor="#38b000" FontSize="20" Margin="35,0,30,0" VerticalOptions="Center" Text="{Binding UserName}"/>
+                        <Entry Placeholder="Enter mail" PlaceholderColor="LightGreen" TextColor="#38b000" FontSize="20" Margin="35,0,30,0" VerticalOptions="Center" Text="{Binding Mail}"/>
                     </Frame>
                 </StackLayout>
                 <Label Grid.Row="0" Grid.Column="0" Text="Password" FontSize="30" FontAttributes="Bold" Margin="10,10,0,15" TextColor="DarkGreen"/>

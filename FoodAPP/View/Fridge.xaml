@@ -2,11 +2,82 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="FoodAPP.View.Fridge"
+             Shell.NavBarIsVisible="False"
              Title="Fridge">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+    <Grid RowDefinitions="*,60" ColumnDefinitions="*,*,*">
+        <ScrollView Grid.Row="0" Grid.ColumnSpan="3">
+            <Grid RowDefinitions="40,*">
+                <Label Grid.Row="0" HorizontalOptions="Center" VerticalOptions="Start" Margin="0">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="Food" TextColor="#d4a373" FontAttributes="Bold" FontSize="30"/>
+                            <Span Text="APP" TextColor="DarkGreen" FontAttributes="Bold" FontSize="30"/>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+                <VerticalStackLayout Grid.Row="1">
+                    <Label Text="Fridge" FontSize="45" FontAttributes="Bold"/>
+                    <CollectionView x:Name="Prod" Margin="20" SelectionMode="Single" SelectionChanged="Prod_SelectionChanged">
+                        <CollectionView.ItemsLayout>
+                            <LinearItemsLayout Orientation="Vertical" ItemSpacing="20"/>
+                        </CollectionView.ItemsLayout>
+                        <CollectionView.ItemTemplate>
+                            <DataTemplate>
+                                <StackLayout>
+                                    <Frame BackgroundColor="LightGreen" CornerRadius="30">
+                                        <Grid>
+                                            <HorizontalStackLayout>
+                                                <Label Text=""/>
+                                                <Label Text=""/>
+                                            </HorizontalStackLayout>
+                                            <Label Text=""/>
+                                            <Label Text=""/>
+                                            <HorizontalStackLayout>
+                                                <Label Text=""/>
+                                                <Label Text=""/>
+                                            </HorizontalStackLayout>
+                                        </Grid>
+                                    </Frame>
+                                </StackLayout>
+                            </DataTemplate>
+                        </CollectionView.ItemTemplate>
+                    </CollectionView>
+                </VerticalStackLayout>
+                <AbsoluteLayout>
+                    <Button Text="+" FontSize="40" BackgroundColor="Green" TextColor="White" CornerRadius="80" WidthRequest="80" HeightRequest="80" AbsoluteLayout.LayoutBounds="310,650,80,80"></Button>
+                </AbsoluteLayout>
+            </Grid>
+        </ScrollView>
+        <VerticalStackLayout Grid.Column="0" Grid.Row="1">
+            <Line BackgroundColor="LightGray" Margin="0,0,0,0"/>
+            <Image Source="Images/fridge.png" HorizontalOptions="Center" VerticalOptions="Center" Margin="0,5,0,0"/>
+            <Label Text="Fridge" TextColor="Green" FontSize="16" HorizontalTextAlignment="Center"/>
+        </VerticalStackLayout>
+        <VerticalStackLayout Grid.Column="1" Grid.Row="2">
+            <Line BackgroundColor="LightGray" Margin="0,0,0,0"/>
+            <Image Source="Images/cartgray.png" HorizontalOptions="Center" VerticalOptions="Center" Margin="0,5,0,0">
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer Command="{Binding CartCommand}"></TapGestureRecognizer>
+                </Image.GestureRecognizers>
+            </Image>
+            <Label Text="Cart" TextColor="LightGray" FontSize="16" HorizontalOptions="Center">
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Command="{Binding CartCommand}"></TapGestureRecognizer>
+                </Label.GestureRecognizers>
+            </Label>
+        </VerticalStackLayout>
+        <VerticalStackLayout Grid.Column="2" Grid.Row="2">
+            <Line BackgroundColor="LightGray" Margin="0,0,0,0"/>
+            <Image Source="Images/usgray.png" HorizontalOptions="Center" VerticalOptions="Center" Margin="0,5,0,0">
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer Command="{Binding UsCommand}"></TapGestureRecognizer>
+                </Image.GestureRecognizers>
+            </Image>
+            <Label Text="Account" TextColor="LightGray" FontSize="16" HorizontalOptions="Center">
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Command="{Binding UsCommand}"></TapGestureRecognizer>
+                </Label.GestureRecognizers>
+            </Label>
+        </VerticalStackLayout>
+    </Grid>
 </ContentPage>

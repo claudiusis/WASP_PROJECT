@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using FoodAPP;
+﻿using FoodAPP.Model;
 using SQLite;
 
 namespace FoodAPP
@@ -16,20 +11,43 @@ namespace FoodAPP
         {
             _database = new SQLiteAsyncConnection(dbPath);
             _database.CreateTableAsync<SignupModel>().Wait();
+            _database.CreateTableAsync<FridgeModel>().Wait();
+            _database.CreateTableAsync<Product>().Wait();
+            _database.CreateTableAsync<ProductType>().Wait();
+            _database.CreateTableAsync<ProductSubType>().Wait();
         }
-
+        //Tasks for Users Pages
         public Task<SignupModel> GetLoginDataAsync(string email)
         {
-            return _database.Table<SignupModel>().Where(i => i.Email == email).FirstOrDefaultAsync();
+            var id = _database.Table<SignupModel>().Where(i => i.Email == email).FirstOrDefaultAsync();
+            return id;
         }
 
         public Task<int> SaveLoginDataAsync(SignupModel loginData)
         {
             return _database.InsertAsync(loginData);
         }
-        public Task<int> DeleteUser(SignupModel signupdata)
+        //Tasks for Fridge Table
+        public async Task<List<FridgeModel>> GetFoodNote()
         {
-            return _database.DeleteAsync(signupdata);
+            return await _database.Table<FridgeModel>().ToListAsync();
+        }
+        public  Task<FridgeModel> GetFoodNote(int id)
+        {
+            return _database.Table<FridgeModel>().Where(i => i.ID == id).FirstOrDefaultAsync();
+        }
+
+        public Task<int> SaveItemAsync(FridgeModel item)
+        {
+            if (item.ID != 0)
+                return  _database.UpdateAsync(item);
+            else
+                return _database.InsertAsync(item);
+        }
+
+        public Task<int> DeleteItemAsync(FridgeModel item)
+        {
+            return _database.DeleteAsync(item);
         }
     }
 }

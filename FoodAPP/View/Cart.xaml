@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             Shell.NavBarIsVisible="False"
+             x:Class="FoodAPP.View.Cart"
+             Title="Cart">
+    <Grid RowDefinitions="*,60" ColumnDefinitions="*,*,*">
+        <VerticalStackLayout Grid.Column="0" Grid.Row="2">
+            <Line BackgroundColor="LightGray" Margin="0,0,0,0"/>
+            <Image Source="Images/fridgegray.png" HorizontalOptions="Center" VerticalOptions="Center" Margin="0,5,0,0">
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer Command="{Binding FridgeCommand}"></TapGestureRecognizer>
+                </Image.GestureRecognizers>
+            </Image>
+            <Label Text="Fridge" TextColor="LightGray" FontSize="16" HorizontalOptions="Center">
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Command="{Binding FridgeCommand}"></TapGestureRecognizer>
+                </Label.GestureRecognizers>
+            </Label>
+        </VerticalStackLayout>
+        <VerticalStackLayout Grid.Column="1" Grid.Row="2">
+                <Line BackgroundColor="LightGray" Margin="0,0,0,0"/>
+            <Image Source="Images/shopcart.png" HorizontalOptions="Center" VerticalOptions="Center" Margin="0,5,0,0"/>
+            <Label Text="Cart" TextColor="Green" FontSize="16" HorizontalTextAlignment="Center"/>
+        </VerticalStackLayout>
+        <VerticalStackLayout Grid.Column="2" Grid.Row="2">
+            <Line BackgroundColor="LightGray" Margin="0,0,0,0"/>
+            <Image Source="Images/usgray.png" HorizontalOptions="Center" VerticalOptions="Center" Margin="0,5,0,0">
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer Command="{Binding UsCommand}"></TapGestureRecognizer>
+                </Image.GestureRecognizers>
+            </Image>
+            <Label Text="Account" TextColor="LightGray" FontSize="16" HorizontalOptions="Center">
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Command="{Binding UsCommand}"></TapGestureRecognizer>
+                </Label.GestureRecognizers>
+            </Label>
+        </VerticalStackLayout>
+    </Grid>
+</ContentPage>

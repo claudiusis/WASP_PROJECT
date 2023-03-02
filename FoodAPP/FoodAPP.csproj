@@ -74,14 +74,20 @@
 	  <None Remove="Resources\Fonts\roboto-v30-latin-regular.ttf" />
 	  <None Remove="Resources\Images\arroba.png" />
 	  <None Remove="Resources\Images\avatar.png" />
+	  <None Remove="Resources\Images\cartgray.png" />
 	  <None Remove="Resources\Images\dotnet_bot.svg" />
 	  <None Remove="Resources\Images\email.png" />
 	  <None Remove="Resources\Images\eye.png" />
 	  <None Remove="Resources\Images\eye2.png" />
+	  <None Remove="Resources\Images\fridge.png" />
+	  <None Remove="Resources\Images\fridgegray.png" />
 	  <None Remove="Resources\Images\lock.png" />
+	  <None Remove="Resources\Images\shopcart.png" />
 	  <None Remove="Resources\Images\startimg.jpg" />
 	  <None Remove="Resources\Images\tray.png" />
+	  <None Remove="Resources\Images\us.png" />
 	  <None Remove="Resources\Images\user.png" />
+	  <None Remove="Resources\Images\usgray.png" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -100,12 +106,15 @@
 	  <Compile Update="View\Signin.xaml.cs">
 	    <DependentUpon>Signin.xaml</DependentUpon>
 	  </Compile>
-	  <Compile Update="View\Page1.xaml.cs">
-	    <DependentUpon>Page1.xaml</DependentUpon>
-	  </Compile>
 	</ItemGroup>
 
 	<ItemGroup>
+	  <MauiXaml Update="View\Cart.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="View\FoodAdding.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="View\Fridge.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
@@ -116,6 +125,9 @@
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="View\Signin.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="View\UserPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	</ItemGroup>

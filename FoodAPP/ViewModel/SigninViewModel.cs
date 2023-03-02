@@ -13,7 +13,7 @@ namespace FoodAPP.ViewModel
 {
     internal class SigninViewModel: INotifyPropertyChanged
     {
-        public string UserName {get; set;}
+        public string Mail {get; set;}
         public string Password { get; set;}
 
         public event PropertyChangedEventHandler PropertyChanged;
@@ -28,7 +28,7 @@ namespace FoodAPP.ViewModel
 
         private async void OnSigninClicked(object obj)
         {
-            var signindata = await App.Database.GetLoginDataAsync(UserName);
+            var signindata = await App.Database.GetLoginDataAsync(Mail);
             if (signindata != null)
             {
                 if (string.Equals(Password, signindata.Password))
@@ -42,7 +42,7 @@ namespace FoodAPP.ViewModel
             }
             else
             {
-                await Application.Current.MainPage.DisplayAlert("ERROR!", "Uncorrect username", "OK");
+                await Application.Current.MainPage.DisplayAlert("ERROR!", "Uncorrect mail", "OK");
             }
         }
 

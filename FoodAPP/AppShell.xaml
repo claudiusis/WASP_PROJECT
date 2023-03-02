@@ -7,6 +7,5 @@
     xmlns:view="clr-namespace:FoodAPP.View"
     Shell.FlyoutBehavior="Disabled">
 
-    <ShellContent ContentTemplate="{DataTemplate view:Start}"/>
-
+    <ShellContent ContentTemplate="{DataTemplate view:Fridge}"/>
 </Shell>

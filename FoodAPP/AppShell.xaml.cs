@@ -12,7 +12,9 @@ public partial class AppShell : Shell
         Routing.RegisterRoute(nameof(Signin), typeof(Signin));
         Routing.RegisterRoute(nameof(Signup), typeof(Signup));
         Routing.RegisterRoute(nameof(Fridge), typeof(Fridge));
-        DateTime date = new DateTime(2023, 02, 11, 16, 47, 35, 00);
+        Routing.RegisterRoute(nameof(Cart), typeof(Cart));
+        Routing.RegisterRoute(nameof(UserPage), typeof(UserPage));
+        DateTime date = DateTime.Now;
         var request = new NotificationRequest
         {
             NotificationId = 1,
@@ -21,13 +23,9 @@ public partial class AppShell : Shell
             Description = "WWWWW",
             Schedule = new NotificationRequestSchedule
             {
-                NotifyTime = date,
+                NotifyTime = date.AddSeconds(30),
             }
         };
-        if (date == DateTime.Today)
-        {
-            LocalNotificationCenter.Current.Show(request);
-            Console.WriteLine("QQQQQ!!!!");
-        }
+        LocalNotificationCenter.Current.Show(request);
     }
 }

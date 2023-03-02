@@ -29,6 +29,7 @@ namespace FoodAPP.ViewModel2
             SignupModel sgnmd = new SignupModel();
             string []modelparts = { Name, Mail, Password};
             bool key = true;
+            var databasechecker = await App.Database.GetLoginDataAsync(Mail);
             if (modelparts.All(s => !string.IsNullOrEmpty(s))){
                 sgnmd.Name = Name;
                 sgnmd.SurName = SurName;
@@ -53,12 +54,16 @@ namespace FoodAPP.ViewModel2
                     key= false;
                     
                 }
-                if (key)
+                if (key && databasechecker==null)
                 {
                    await App.Database.SaveLoginDataAsync(sgnmd);
                    await Shell.Current.DisplayAlert("Account created!","", "OK");
+                    await Shell.Current.GoToAsync(nameof(UserPage));
                 }
-                
+                else
+                {
+                    await Shell.Current.DisplayAlert("Email register in system","Use another e-mail","Ok");
+                }
             }
             else
             {
