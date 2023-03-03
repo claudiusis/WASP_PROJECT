@@ -5,72 +5,71 @@ build_property.UsingMicrosoftNETSdkWeb =
 build_property.ProjectTypeGuids = 9A19103F-16F7-4668-BE54-9A1E7A4F7556
 build_property.InvariantGlobalization = 
 build_property.PlatformNeutralAssembly = 
-build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = FoodAPP
-build_property.ProjectDir = C:\Users\Nikitos\Desktop\FoodAPP\FoodAPP\
+build_property.ProjectDir = C:\Users\Isaev\source\repos\WASP_PROJECT\FoodAPP\
 
-[C:/Users/Nikitos/Desktop/FoodAPP/FoodAPP/App.xaml]
+[C:/Users/Isaev/source/repos/WASP_PROJECT/FoodAPP/App.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = FoodAPP.App.xaml
 build_metadata.AdditionalFiles.TargetPath = App.xaml
 build_metadata.AdditionalFiles.RelativePath = App.xaml
 
-[C:/Users/Nikitos/Desktop/FoodAPP/FoodAPP/AppShell.xaml]
+[C:/Users/Isaev/source/repos/WASP_PROJECT/FoodAPP/AppShell.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = FoodAPP.AppShell.xaml
 build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
 build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
 
-[C:/Users/Nikitos/Desktop/FoodAPP/FoodAPP/Resources/Styles/Colors.xaml]
+[C:/Users/Isaev/source/repos/WASP_PROJECT/FoodAPP/Resources/Styles/Colors.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = FoodAPP.Resources.Styles.Colors.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
 
-[C:/Users/Nikitos/Desktop/FoodAPP/FoodAPP/Resources/Styles/Styles.xaml]
+[C:/Users/Isaev/source/repos/WASP_PROJECT/FoodAPP/Resources/Styles/Styles.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = FoodAPP.Resources.Styles.Styles.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
 
-[C:/Users/Nikitos/Desktop/FoodAPP/FoodAPP/View/Cart.xaml]
+[C:/Users/Isaev/source/repos/WASP_PROJECT/FoodAPP/View/Cart.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = FoodAPP.View.Cart.xaml
 build_metadata.AdditionalFiles.TargetPath = View\Cart.xaml
 build_metadata.AdditionalFiles.RelativePath = View\Cart.xaml
 
-[C:/Users/Nikitos/Desktop/FoodAPP/FoodAPP/View/FoodAdding.xaml]
+[C:/Users/Isaev/source/repos/WASP_PROJECT/FoodAPP/View/FoodAdding.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = FoodAPP.View.FoodAdding.xaml
 build_metadata.AdditionalFiles.TargetPath = View\FoodAdding.xaml
 build_metadata.AdditionalFiles.RelativePath = View\FoodAdding.xaml
 
-[C:/Users/Nikitos/Desktop/FoodAPP/FoodAPP/View/Fridge.xaml]
+[C:/Users/Isaev/source/repos/WASP_PROJECT/FoodAPP/View/Fridge.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = FoodAPP.View.Fridge.xaml
 build_metadata.AdditionalFiles.TargetPath = View\Fridge.xaml
 build_metadata.AdditionalFiles.RelativePath = View\Fridge.xaml
 
-[C:/Users/Nikitos/Desktop/FoodAPP/FoodAPP/View/Signin.xaml]
+[C:/Users/Isaev/source/repos/WASP_PROJECT/FoodAPP/View/Signin.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = FoodAPP.View.Signin.xaml
 build_metadata.AdditionalFiles.TargetPath = View\Signin.xaml
 build_metadata.AdditionalFiles.RelativePath = View\Signin.xaml
 
-[C:/Users/Nikitos/Desktop/FoodAPP/FoodAPP/View/Signup.xaml]
+[C:/Users/Isaev/source/repos/WASP_PROJECT/FoodAPP/View/Signup.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = FoodAPP.View.Signup.xaml
 build_metadata.AdditionalFiles.TargetPath = View\Signup.xaml
 build_metadata.AdditionalFiles.RelativePath = View\Signup.xaml
 
-[C:/Users/Nikitos/Desktop/FoodAPP/FoodAPP/View/Start.xaml]
+[C:/Users/Isaev/source/repos/WASP_PROJECT/FoodAPP/View/Start.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = FoodAPP.View.Start.xaml
 build_metadata.AdditionalFiles.TargetPath = View\Start.xaml
 build_metadata.AdditionalFiles.RelativePath = View\Start.xaml
 
-[C:/Users/Nikitos/Desktop/FoodAPP/FoodAPP/View/UserPage.xaml]
+[C:/Users/Isaev/source/repos/WASP_PROJECT/FoodAPP/View/UserPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = FoodAPP.View.UserPage.xaml
 build_metadata.AdditionalFiles.TargetPath = View\UserPage.xaml

@@ -17,7 +17,7 @@
                 </Label>
                 <VerticalStackLayout Grid.Row="1">
                     <Label Text="Fridge" FontSize="45" FontAttributes="Bold"/>
-                    <CollectionView x:Name="Prod" Margin="20" SelectionMode="Single" SelectionChanged="Prod_SelectionChanged">
+                    <CollectionView x:Name="Prod" Margin="20" SelectionMode="Single" >
                         <CollectionView.ItemsLayout>
                             <LinearItemsLayout Orientation="Vertical" ItemSpacing="20"/>
                         </CollectionView.ItemsLayout>

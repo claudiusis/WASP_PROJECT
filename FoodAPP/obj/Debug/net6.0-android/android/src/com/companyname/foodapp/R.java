@@ -11188,18 +11188,16 @@ public final class R {
     public static final int notification_tile_bg=0x7f0700b4;
     public static final int notify_panel_notification_icon_bg=0x7f0700b5;
     public static final int shopcart=0x7f0700b6;
-    public static final int shopcat=0x7f0700b7;
-    public static final int splash=0x7f0700b8;
-    public static final int startimg=0x7f0700b9;
-    public static final int test_custom_background=0x7f0700ba;
-    public static final int test_level_drawable=0x7f0700bb;
-    public static final int tooltip_frame_dark=0x7f0700bc;
-    public static final int tooltip_frame_light=0x7f0700bd;
-    public static final int tray=0x7f0700be;
-    public static final int us=0x7f0700bf;
-    public static final int user=0x7f0700c0;
-    public static final int usgray=0x7f0700c1;
-    public static final int usicon=0x7f0700c2;
+    public static final int splash=0x7f0700b7;
+    public static final int startimg=0x7f0700b8;
+    public static final int test_custom_background=0x7f0700b9;
+    public static final int test_level_drawable=0x7f0700ba;
+    public static final int tooltip_frame_dark=0x7f0700bb;
+    public static final int tooltip_frame_light=0x7f0700bc;
+    public static final int tray=0x7f0700bd;
+    public static final int us=0x7f0700be;
+    public static final int user=0x7f0700bf;
+    public static final int usgray=0x7f0700c0;
   }
   public static final class id {
     public static final int ALT=0x7f080000;
