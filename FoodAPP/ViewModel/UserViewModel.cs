@@ -9,6 +9,7 @@ using FoodAPP.View;
 
 namespace FoodAPP.ViewModel
 {
+
     public class UserViewModel
     {
         /* SignupModel signupModel;
@@ -31,4 +32,5 @@ namespace FoodAPP.ViewModel
             await Shell.Current.GoToAsync(nameof(Fridge));
         }
     }
+
 }

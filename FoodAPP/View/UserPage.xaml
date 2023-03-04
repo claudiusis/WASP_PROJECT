@@ -4,7 +4,39 @@
              Shell.NavBarIsVisible="False"
              x:Class="FoodAPP.View.UserPage"
              Title="UserPage">
-    <Grid RowDefinitions="*,60" ColumnDefinitions="*,*,*">
+    <Grid RowDefinitions="*,60" ColumnDefinitions="*,*,*" >
+        <VerticalStackLayout VerticalOptions="Center" Grid.Row="0" Grid.ColumnSpan="3" BackgroundColor="#f3f5d0">
+            <Label Text="Account" HorizontalOptions="Center" TextColor="DarkGreen" FontSize="36" FontAttributes="Bold"/>
+            <Label Text="Name" FontSize="24" FontAttributes="Bold" Margin="5,5,5,5" TextColor="DarkGreen"/>
+            <StackLayout Orientation="Horizontal">
+                <Frame CornerRadius="45" BorderColor="White" HasShadow="True" HorizontalOptions="FillAndExpand" HeightRequest="60" Margin="0" Padding="0">
+                    <Grid ColumnDefinitions="32,*" ColumnSpacing="10">
+                        <Image Source="Images/user.png" Margin="10,0,0,0"/>
+                        <Label x:Name="name"  Grid.Column="1" TextColor="#38b000" FontSize="20" Margin="0" VerticalOptions="Center" Text="{Binding Name}"/>
+                    </Grid>
+                </Frame>
+            </StackLayout>
+            <Label Text="Surname" FontSize="24" FontAttributes="Bold" Margin="5,5,5,5" TextColor="DarkGreen"/>
+            <StackLayout Orientation="Horizontal">
+                <Frame CornerRadius="45" BorderColor="White" HasShadow="True" HorizontalOptions="FillAndExpand" HeightRequest="60" Margin="0" Padding="0">
+                    <Grid ColumnDefinitions="32,*" ColumnSpacing="10">
+                        <Image Source="Images/user.png" Margin="10,0,0,0"/>
+                        <Label x:Name="surname" Grid.Column="1" TextColor="#38b000" FontSize="20" Margin="0" VerticalOptions="Center" Text="{Binding Surname}"/>
+                    </Grid>
+                </Frame>
+            </StackLayout>
+            <Label Text="Email" FontSize="24" FontAttributes="Bold" Margin="5,5,5,5" TextColor="DarkGreen"/>
+            <StackLayout Orientation="Horizontal">
+                <Frame CornerRadius="45" BorderColor="White" HasShadow="True" HorizontalOptions="FillAndExpand" HeightRequest="60" Margin="0" Padding="0">
+                    <Grid ColumnDefinitions="32,*" ColumnSpacing="10">
+                        <Image Source="Images/email.png" Margin="10,0,0,0"/>
+                        <Label x:Name="mail" Grid.Column="1" TextColor="#38b000" FontSize="20" Margin="0" VerticalOptions="Center" Text="{Binding Mail}"/>
+                    </Grid>
+                </Frame>
+            </StackLayout>
+            <Image Source="Images/startimg.jpg" Aspect="AspectFit"/>
+        </VerticalStackLayout>
+       
         <VerticalStackLayout Grid.Column="0" Grid.Row="1">
             <Line BackgroundColor="LightGray" Margin="0,0,0,0"/>
             <Image Source="Images/fridgegray.png" HorizontalOptions="Center" VerticalOptions="Center" Margin="0,5,0,0">
