@@ -10,7 +10,7 @@ namespace FoodAPP.ViewModel
 {
     class ProductTypes
     {
-        ObservableCollection<ProductType> Types { get; set; }
+        public static ObservableCollection<ProductType> Types { get; set; }
 
         ProductTypes()
         {

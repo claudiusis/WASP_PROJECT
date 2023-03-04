@@ -17,7 +17,6 @@ public partial class Fridge : ContentPage
     {
         Prod.ItemsSource = await App.Database.GetFoodNote();
         base.OnAppearing();
-
     }
     private async void Prod_SelectionChanged(object sender, SelectionChangedEventArgs e)
      {

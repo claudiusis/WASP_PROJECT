@@ -54,5 +54,14 @@ namespace FoodAPP
         {
             return _database.InsertAsync(productType);
         }
+        public Task<ProductType> GetProdType(int id)
+        {
+            return _database.Table<ProductType>().Where(i => i.ID == id).FirstOrDefaultAsync();
+        }
+
+        public Task<int> SaveProdSubtype(ProductSubType subtype)
+        {
+            return _database.InsertAsync(subtype);
+        }
     }
 }

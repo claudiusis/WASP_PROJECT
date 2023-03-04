@@ -16,7 +16,7 @@ public partial class FoodAdding : ContentPage
 	{
 		InitializeComponent();
         Date1.MaximumDate = DateTime.Now;
-		BindingContext = new FoodAddingViewModel();
+		BindingContext = new FridgeModel();
 	}
 
 
@@ -31,6 +31,7 @@ public partial class FoodAdding : ContentPage
         catch { }
 
     }
+
     private void Date1_DateSelected(object sender, DateChangedEventArgs e)
     {
 		Date2.MinimumDate = Date1.Date;
@@ -39,5 +40,11 @@ public partial class FoodAdding : ContentPage
     private void Picker_SelectedIndexChanged(object sender, EventArgs e)
     {
         Picker2.IsVisible = true;
+    }
+    private async void SaveClicked(object sender, EventArgs e)
+    {
+        FridgeModel fridge = (FridgeModel)BindingContext;
+        await App.Database.SaveItemAsync(fridge);
+        await Shell.Current.GoToAsync(nameof(Fridge));
     }
 }

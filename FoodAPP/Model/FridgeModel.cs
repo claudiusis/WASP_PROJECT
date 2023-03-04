@@ -16,7 +16,7 @@ namespace FoodAPP
         public int ID_ofproduct { get; set; }
         public DateTime StartDate { get; set; }
         public DateTime ExpirationDate { get; set; }
-        public string Description { get; set; }
+     /*   public string Description { get; set; } */
 
     }
 }

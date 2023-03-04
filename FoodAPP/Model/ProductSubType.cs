@@ -11,7 +11,7 @@ namespace FoodAPP.Model
     {
         [PrimaryKey, AutoIncrement] 
         public int ID { get; set; }
-        public int TypeID { get; }
+        public int TypeID { get; set;  }
         public string Title { get; set; }
     }
 }
