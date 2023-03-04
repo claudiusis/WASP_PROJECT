@@ -39,6 +39,7 @@ C:\Users\Nikitos\Desktop\FoodAPP\FoodAPP\obj\Debug\net6.0-android\resizetizer\r\
 C:\Users\Nikitos\Desktop\FoodAPP\FoodAPP\obj\Debug\net6.0-android\resizetizer\r\drawable-xxxhdpi\splash.png
 C:\Users\Nikitos\Desktop\FoodAPP\FoodAPP\obj\Debug\net6.0-android\resizetizer\r\drawable\arroba.png
 C:\Users\Nikitos\Desktop\FoodAPP\FoodAPP\obj\Debug\net6.0-android\resizetizer\r\drawable\avatar.png
+C:\Users\Nikitos\Desktop\FoodAPP\FoodAPP\obj\Debug\net6.0-android\resizetizer\r\drawable\cart.jpg
 C:\Users\Nikitos\Desktop\FoodAPP\FoodAPP\obj\Debug\net6.0-android\resizetizer\r\drawable\cartgray.png
 C:\Users\Nikitos\Desktop\FoodAPP\FoodAPP\obj\Debug\net6.0-android\resizetizer\r\drawable\email.png
 C:\Users\Nikitos\Desktop\FoodAPP\FoodAPP\obj\Debug\net6.0-android\resizetizer\r\drawable\eye.png
@@ -176,6 +177,7 @@ C:\Users\Nikitos\Desktop\FoodAPP\FoodAPP\obj\Debug\net6.0-android\android\assets
 C:\Users\Nikitos\Desktop\FoodAPP\FoodAPP\obj\Debug\net6.0-android\android\assets\Mono.Android.Export.dll
 C:\Users\Nikitos\Desktop\FoodAPP\FoodAPP\obj\Debug\net6.0-android\android\assets\Mono.Android.Export.pdb
 C:\Users\Nikitos\Desktop\FoodAPP\FoodAPP\obj\Debug\net6.0-android\android\assets\Mono.Android.pdb
+C:\Users\Nikitos\Desktop\FoodAPP\FoodAPP\obj\Debug\net6.0-android\android\assets\mscorlib.dll
 C:\Users\Nikitos\Desktop\FoodAPP\FoodAPP\obj\Debug\net6.0-android\android\assets\netstandard.dll
 C:\Users\Nikitos\Desktop\FoodAPP\FoodAPP\obj\Debug\net6.0-android\android\assets\Plugin.LocalNotification.dll
 C:\Users\Nikitos\Desktop\FoodAPP\FoodAPP\obj\Debug\net6.0-android\android\assets\SQLite-net.dll
@@ -185,6 +187,7 @@ C:\Users\Nikitos\Desktop\FoodAPP\FoodAPP\obj\Debug\net6.0-android\android\assets
 C:\Users\Nikitos\Desktop\FoodAPP\FoodAPP\obj\Debug\net6.0-android\android\assets\SQLitePCLRaw.provider.e_sqlite3.dll
 C:\Users\Nikitos\Desktop\FoodAPP\FoodAPP\obj\Debug\net6.0-android\android\assets\System.AppContext.dll
 C:\Users\Nikitos\Desktop\FoodAPP\FoodAPP\obj\Debug\net6.0-android\android\assets\System.Buffers.dll
+C:\Users\Nikitos\Desktop\FoodAPP\FoodAPP\obj\Debug\net6.0-android\android\assets\System.Collections.Concurrent.dll
 C:\Users\Nikitos\Desktop\FoodAPP\FoodAPP\obj\Debug\net6.0-android\android\assets\System.Collections.dll
 C:\Users\Nikitos\Desktop\FoodAPP\FoodAPP\obj\Debug\net6.0-android\android\assets\System.Collections.Immutable.dll
 C:\Users\Nikitos\Desktop\FoodAPP\FoodAPP\obj\Debug\net6.0-android\android\assets\System.Collections.NonGeneric.dll
@@ -200,6 +203,7 @@ C:\Users\Nikitos\Desktop\FoodAPP\FoodAPP\obj\Debug\net6.0-android\android\assets
 C:\Users\Nikitos\Desktop\FoodAPP\FoodAPP\obj\Debug\net6.0-android\android\assets\System.Core.dll
 C:\Users\Nikitos\Desktop\FoodAPP\FoodAPP\obj\Debug\net6.0-android\android\assets\System.Data.Common.dll
 C:\Users\Nikitos\Desktop\FoodAPP\FoodAPP\obj\Debug\net6.0-android\android\assets\System.Data.DataSetExtensions.dll
+C:\Users\Nikitos\Desktop\FoodAPP\FoodAPP\obj\Debug\net6.0-android\android\assets\System.Data.dll
 C:\Users\Nikitos\Desktop\FoodAPP\FoodAPP\obj\Debug\net6.0-android\android\assets\System.Diagnostics.Contracts.dll
 C:\Users\Nikitos\Desktop\FoodAPP\FoodAPP\obj\Debug\net6.0-android\android\assets\System.Diagnostics.Debug.dll
 C:\Users\Nikitos\Desktop\FoodAPP\FoodAPP\obj\Debug\net6.0-android\android\assets\System.Diagnostics.DiagnosticSource.dll
@@ -210,6 +214,7 @@ C:\Users\Nikitos\Desktop\FoodAPP\FoodAPP\obj\Debug\net6.0-android\android\assets
 C:\Users\Nikitos\Desktop\FoodAPP\FoodAPP\obj\Debug\net6.0-android\android\assets\System.Diagnostics.Tools.dll
 C:\Users\Nikitos\Desktop\FoodAPP\FoodAPP\obj\Debug\net6.0-android\android\assets\System.Diagnostics.TraceSource.dll
 C:\Users\Nikitos\Desktop\FoodAPP\FoodAPP\obj\Debug\net6.0-android\android\assets\System.Diagnostics.Tracing.dll
+C:\Users\Nikitos\Desktop\FoodAPP\FoodAPP\obj\Debug\net6.0-android\android\assets\System.dll
 C:\Users\Nikitos\Desktop\FoodAPP\FoodAPP\obj\Debug\net6.0-android\android\assets\System.Drawing.dll
 C:\Users\Nikitos\Desktop\FoodAPP\FoodAPP\obj\Debug\net6.0-android\android\assets\System.Drawing.Primitives.dll
 C:\Users\Nikitos\Desktop\FoodAPP\FoodAPP\obj\Debug\net6.0-android\android\assets\System.Dynamic.Runtime.dll
@@ -243,6 +248,7 @@ C:\Users\Nikitos\Desktop\FoodAPP\FoodAPP\obj\Debug\net6.0-android\android\assets
 C:\Users\Nikitos\Desktop\FoodAPP\FoodAPP\obj\Debug\net6.0-android\android\assets\System.Net.HttpListener.dll
 C:\Users\Nikitos\Desktop\FoodAPP\FoodAPP\obj\Debug\net6.0-android\android\assets\System.Net.Mail.dll
 C:\Users\Nikitos\Desktop\FoodAPP\FoodAPP\obj\Debug\net6.0-android\android\assets\System.Net.NameResolution.dll
+C:\Users\Nikitos\Desktop\FoodAPP\FoodAPP\obj\Debug\net6.0-android\android\assets\System.Net.NetworkInformation.dll
 C:\Users\Nikitos\Desktop\FoodAPP\FoodAPP\obj\Debug\net6.0-android\android\assets\System.Net.Ping.dll
 C:\Users\Nikitos\Desktop\FoodAPP\FoodAPP\obj\Debug\net6.0-android\android\assets\System.Net.Primitives.dll
 C:\Users\Nikitos\Desktop\FoodAPP\FoodAPP\obj\Debug\net6.0-android\android\assets\System.Net.Quic.dll
@@ -258,7 +264,9 @@ C:\Users\Nikitos\Desktop\FoodAPP\FoodAPP\obj\Debug\net6.0-android\android\assets
 C:\Users\Nikitos\Desktop\FoodAPP\FoodAPP\obj\Debug\net6.0-android\android\assets\System.Numerics.dll
 C:\Users\Nikitos\Desktop\FoodAPP\FoodAPP\obj\Debug\net6.0-android\android\assets\System.Numerics.Vectors.dll
 C:\Users\Nikitos\Desktop\FoodAPP\FoodAPP\obj\Debug\net6.0-android\android\assets\System.ObjectModel.dll
+C:\Users\Nikitos\Desktop\FoodAPP\FoodAPP\obj\Debug\net6.0-android\android\assets\System.Private.CoreLib.dll
 C:\Users\Nikitos\Desktop\FoodAPP\FoodAPP\obj\Debug\net6.0-android\android\assets\System.Private.DataContractSerialization.dll
+C:\Users\Nikitos\Desktop\FoodAPP\FoodAPP\obj\Debug\net6.0-android\android\assets\System.Private.Uri.dll
 C:\Users\Nikitos\Desktop\FoodAPP\FoodAPP\obj\Debug\net6.0-android\android\assets\System.Private.Xml.dll
 C:\Users\Nikitos\Desktop\FoodAPP\FoodAPP\obj\Debug\net6.0-android\android\assets\System.Private.Xml.Linq.dll
 C:\Users\Nikitos\Desktop\FoodAPP\FoodAPP\obj\Debug\net6.0-android\android\assets\System.Reflection.DispatchProxy.dll
@@ -325,6 +333,7 @@ C:\Users\Nikitos\Desktop\FoodAPP\FoodAPP\obj\Debug\net6.0-android\android\assets
 C:\Users\Nikitos\Desktop\FoodAPP\FoodAPP\obj\Debug\net6.0-android\android\assets\System.Web.dll
 C:\Users\Nikitos\Desktop\FoodAPP\FoodAPP\obj\Debug\net6.0-android\android\assets\System.Web.HttpUtility.dll
 C:\Users\Nikitos\Desktop\FoodAPP\FoodAPP\obj\Debug\net6.0-android\android\assets\System.Windows.dll
+C:\Users\Nikitos\Desktop\FoodAPP\FoodAPP\obj\Debug\net6.0-android\android\assets\System.Xml.dll
 C:\Users\Nikitos\Desktop\FoodAPP\FoodAPP\obj\Debug\net6.0-android\android\assets\System.Xml.Linq.dll
 C:\Users\Nikitos\Desktop\FoodAPP\FoodAPP\obj\Debug\net6.0-android\android\assets\System.Xml.ReaderWriter.dll
 C:\Users\Nikitos\Desktop\FoodAPP\FoodAPP\obj\Debug\net6.0-android\android\assets\System.Xml.Serialization.dll
@@ -1012,11 +1021,3 @@ C:\Users\Nikitos\Desktop\FoodAPP\FoodAPP\obj\Debug\net6.0-android\stamp\_Convert
 C:\Users\Nikitos\Desktop\FoodAPP\FoodAPP\obj\Debug\net6.0-android\stamp\_GenerateJavaStubs.stamp
 C:\Users\Nikitos\Desktop\FoodAPP\FoodAPP\obj\Debug\net6.0-android\stamp\_GeneratePackageManagerJava.stamp
 C:\Users\Nikitos\Desktop\FoodAPP\FoodAPP\obj\Debug\net6.0-android\stamp\_ResolveLibraryProjectImports.stamp
-C:\Users\Nikitos\Desktop\FoodAPP\FoodAPP\obj\Debug\net6.0-android\android\assets\mscorlib.dll
-C:\Users\Nikitos\Desktop\FoodAPP\FoodAPP\obj\Debug\net6.0-android\android\assets\System.Collections.Concurrent.dll
-C:\Users\Nikitos\Desktop\FoodAPP\FoodAPP\obj\Debug\net6.0-android\android\assets\System.Data.dll
-C:\Users\Nikitos\Desktop\FoodAPP\FoodAPP\obj\Debug\net6.0-android\android\assets\System.dll
-C:\Users\Nikitos\Desktop\FoodAPP\FoodAPP\obj\Debug\net6.0-android\android\assets\System.Net.NetworkInformation.dll
-C:\Users\Nikitos\Desktop\FoodAPP\FoodAPP\obj\Debug\net6.0-android\android\assets\System.Private.CoreLib.dll
-C:\Users\Nikitos\Desktop\FoodAPP\FoodAPP\obj\Debug\net6.0-android\android\assets\System.Private.Uri.dll
-C:\Users\Nikitos\Desktop\FoodAPP\FoodAPP\obj\Debug\net6.0-android\android\assets\System.Xml.dll
