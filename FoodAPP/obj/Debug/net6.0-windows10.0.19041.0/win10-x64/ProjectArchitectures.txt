@@ -1,0 +1,1 @@
+C:\Users\Isaev\Source\Repos\WASP_PROJECT2\FoodAPP\FoodAPP.csproj;x64

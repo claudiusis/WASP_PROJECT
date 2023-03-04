@@ -4,8 +4,13 @@
              Shell.NavBarIsVisible="False"
              x:Class="FoodAPP.View.Cart"
              Title="Cart">
-    <Grid RowDefinitions="*,60" ColumnDefinitions="*,*,*">
-        <VerticalStackLayout Grid.Column="0" Grid.Row="2">
+    <Grid RowDefinitions="*,60" ColumnDefinitions="*,*,*" BackgroundColor="#f3f5d0">
+        <VerticalStackLayout VerticalOptions="Center" Grid.Row="0" Grid.ColumnSpan="3" BackgroundColor="#f3f5d0">
+            <Label Text="Извините..." HorizontalOptions="Center" TextColor="DarkGreen" FontSize="36" FontAttributes="Bold"/>
+            <Label Text="Страница находится в разработке" HorizontalOptions="Center" TextColor="DarkGreen" FontSize="24" FontAttributes="Bold"/>
+            <Image Source="Images/cart.jpg" Aspect="AspectFit"/>
+        </VerticalStackLayout>
+        <VerticalStackLayout Grid.Column="0" Grid.Row="2" BackgroundColor="White">
             <Line BackgroundColor="LightGray" Margin="0,0,0,0"/>
             <Image Source="Images/fridgegray.png" HorizontalOptions="Center" VerticalOptions="Center" Margin="0,5,0,0">
                 <Image.GestureRecognizers>
@@ -18,12 +23,12 @@
                 </Label.GestureRecognizers>
             </Label>
         </VerticalStackLayout>
-        <VerticalStackLayout Grid.Column="1" Grid.Row="2">
+        <VerticalStackLayout Grid.Column="1" Grid.Row="2" BackgroundColor="White">
                 <Line BackgroundColor="LightGray" Margin="0,0,0,0"/>
             <Image Source="Images/shopcart.png" HorizontalOptions="Center" VerticalOptions="Center" Margin="0,5,0,0"/>
             <Label Text="Cart" TextColor="Green" FontSize="16" HorizontalTextAlignment="Center"/>
         </VerticalStackLayout>
-        <VerticalStackLayout Grid.Column="2" Grid.Row="2">
+        <VerticalStackLayout Grid.Column="2" Grid.Row="2" BackgroundColor="White">
             <Line BackgroundColor="LightGray" Margin="0,0,0,0"/>
             <Image Source="Images/usgray.png" HorizontalOptions="Center" VerticalOptions="Center" Margin="0,5,0,0">
                 <Image.GestureRecognizers>

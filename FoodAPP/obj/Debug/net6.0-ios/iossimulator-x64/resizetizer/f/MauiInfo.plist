@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>UIAppFonts</key>
+  <array>
+	<string>OpenSans-Regular.ttf</string>
+	<string>OpenSans-Semibold.ttf</string>
+	<string>roboto-v30-latin-100.ttf</string>
+	<string>roboto-v30-latin-100italic.ttf</string>
+	<string>roboto-v30-latin-300.ttf</string>
+	<string>roboto-v30-latin-300italic.ttf</string>
+	<string>roboto-v30-latin-500.ttf</string>
+	<string>roboto-v30-latin-500italic.ttf</string>
+	<string>roboto-v30-latin-700.ttf</string>
+	<string>roboto-v30-latin-700italic.ttf</string>
+	<string>roboto-v30-latin-900.ttf</string>
+	<string>roboto-v30-latin-900italic.ttf</string>
+	<string>roboto-v30-latin-italic.ttf</string>
+	<string>roboto-v30-latin-regular.ttf</string>
+  </array>
+  <key>UILaunchStoryboardName</key>
+  <string>MauiSplash</string>
+
+</dict>
+</plist>
