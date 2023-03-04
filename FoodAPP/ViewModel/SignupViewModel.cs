@@ -58,7 +58,7 @@ namespace FoodAPP.ViewModel2
                 {
                    await App.Database.SaveLoginDataAsync(sgnmd);
                    await Shell.Current.DisplayAlert("Account created!","", "OK");
-                    await Shell.Current.GoToAsync(nameof(UserPage));
+                    await Shell.Current.GoToAsync(nameof(Signin));
                 }
                 else
                 {
