@@ -26,7 +26,7 @@
                         <Frame CornerRadius="45" BorderColor="White" HasShadow="True" HorizontalOptions="FillAndExpand" HeightRequest="60" Margin="0" Padding="0">
                             <Grid ColumnDefinitions="32,*" ColumnSpacing="10">
                                 <Image Source="Images/user.png" Margin="10,0,0,0"/>
-                                <Entry Grid.Column="1" Placeholder="Enter surname" PlaceholderColor="LightGreen" TextColor="#38b000" FontSize="20" Margin="0" VerticalOptions="Center" Text="{Binding Surname}"/>
+                                <Entry Grid.Column="1" Placeholder="Enter surname" PlaceholderColor="LightGreen" TextColor="#38b000" FontSize="20" Margin="0" VerticalOptions="Center" Text="{Binding SurName}"/>
                             </Grid>
                         </Frame>
                     </StackLayout>

@@ -4,6 +4,7 @@ namespace FoodAPP.View;
 
 public partial class Fridge : ContentPage
 {
+    public int FridgeId { get => SigninViewModel.user_id; }
 	public Fridge()
 	{
 		InitializeComponent();

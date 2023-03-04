@@ -12,7 +12,7 @@ public partial class  Signin: ContentPage
         BindingContext = new SigninViewModel();
     }
 
-    async void OnEyeTapped(object sender, EventArgs e)
+    void OnEyeTapped(object sender, EventArgs e)
     {
         if (PasswordEntr.IsPassword)
         {

@@ -43,9 +43,6 @@
                         </CollectionView.ItemTemplate>
                     </CollectionView>
                 </VerticalStackLayout>
-                <AbsoluteLayout>
-                    <Button Text="+" FontSize="40" BackgroundColor="Green" TextColor="White" CornerRadius="80" WidthRequest="80" HeightRequest="80" AbsoluteLayout.LayoutBounds="310,650,80,80"></Button>
-                </AbsoluteLayout>
             </Grid>
         </ScrollView>
         <VerticalStackLayout Grid.Column="0" Grid.Row="1">
@@ -66,6 +63,7 @@
                 </Label.GestureRecognizers>
             </Label>
         </VerticalStackLayout>
+        <Button Text="+" FontSize="40" BackgroundColor="Green" TextColor="White" CornerRadius="80" WidthRequest="80" HeightRequest="80" Margin="0,0,10,150" ZIndex="1" HorizontalOptions="End" Grid.Row="2" Grid.Column="2"></Button>
         <VerticalStackLayout Grid.Column="2" Grid.Row="2">
             <Line BackgroundColor="LightGray" Margin="0,0,0,0"/>
             <Image Source="Images/usgray.png" HorizontalOptions="Center" VerticalOptions="Center" Margin="0,5,0,0">
