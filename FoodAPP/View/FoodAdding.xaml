@@ -3,9 +3,10 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="FoodAPP.View.FoodAdding"
              Title="FoodAdding">
-    <VerticalStackLayout>
-        <HorizontalStackLayout>
-        <Picker Title="Select a type" SelectedIndexChanged="Picker_SelectedIndexChanged" ItemsSource="{Binding Types}" SelectedItem="{Binding ProductType.Title}">
+    <VerticalStackLayout BackgroundColor="#f3f5d0">
+        <Label Text="Add a product" HorizontalOptions="Center" TextColor="DarkGreen" FontSize="36" FontAttributes="Bold" />
+        <HorizontalStackLayout Margin="10, 0, 10, 5">
+            <Picker Title="Select a type" TextColor="Black" HorizontalOptions="Start" FontAttributes="Bold" SelectedIndexChanged="Picker_SelectedIndexChanged" ItemsSource="{Binding Types}" SelectedItem="{Binding ProductType.Title}">
             <Picker.Items>
                 <x:String>Молочка</x:String>
                 <x:String>Колбасы</x:String>
@@ -14,7 +15,7 @@
                 <x:String>Рыба</x:String>
             </Picker.Items>
         </Picker>
-        <Picker Title="Select subtype" x:Name="Picker2" IsVisible="False" ItemsSource="{Binding Subtypes}" SelectedItem="{Binding ProductSubType.Title}">
+            <Picker Title="Select subtype" TextColor="Black" HorizontalOptions="End" FontAttributes="Bold" x:Name="Picker2" IsVisible="False" ItemsSource="{Binding Subtypes}" SelectedItem="{Binding ProductSubType.Title}">
             <Picker.Items>
                 <x:String>Text</x:String>
                 <x:String>Text</x:String>
@@ -24,9 +25,20 @@
             </Picker.Items>
         </Picker>
         </HorizontalStackLayout>
-        <Entry Placeholder="Enter Title" Text="{Binding Product.Title}"/>
-        <DatePicker x:Name="Date1" MinimumDate="2021,01,01" DateSelected="Date1_DateSelected" Date="{Binding FridgeModel.StartDate}"></DatePicker>
-        <DatePicker x:Name="Date2" MaximumDate="2025,12,31" Date="{Binding FridgeModel.ExpirationDate}"></DatePicker>
-        <Entry Placeholder="Enter some annotation" Text="{Binding FridgeModel.Description}"/>
+        <Frame CornerRadius="45" BorderColor="White" HasShadow="True" HorizontalOptions="FillAndExpand" HeightRequest="60" Margin="5" Padding="0">
+            <Entry Placeholder="Enter Title" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" BackgroundColor="White" PlaceholderColor="Black" Text="{Binding Product.Title}"/>
+        </Frame>
+        <HorizontalStackLayout>
+            <Label Text="Select the date of purchase of the product: " Margin="10,0,0,0" TextColor="Black" FontSize="14" FontAttributes="Bold" VerticalTextAlignment="Center"/>
+            <DatePicker x:Name="Date1" TextColor="Black" VerticalOptions="Center" MinimumDate="2021,01,01" DateSelected="Date1_DateSelected" Date="{Binding FridgeModel.StartDate}"></DatePicker>
+        </HorizontalStackLayout>
+        <HorizontalStackLayout>
+            <Label Text="Select the expiration date of the product: " Margin="10,0,0,0" TextColor="Black" FontSize="14" FontAttributes="Bold" VerticalTextAlignment="Center"/>
+            <DatePicker x:Name="Date2" TextColor="Black" MaximumDate="2025,12,31" Date="{Binding FridgeModel.ExpirationDate}"></DatePicker>
+        </HorizontalStackLayout>
+        <Frame CornerRadius="45" BorderColor="White" HasShadow="True" HorizontalOptions="FillAndExpand" HeightRequest="60" Margin="5" Padding="0">
+            <Entry Placeholder="Enter some annotation" BackgroundColor="White" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" PlaceholderColor="Black" Text="{Binding FridgeModel.Description}"/>
+        </Frame>
+        <Button HorizontalOptions="Center" Text="Add!" BackgroundColor="Green" Clicked="AddClicked"/>
     </VerticalStackLayout>
 </ContentPage>

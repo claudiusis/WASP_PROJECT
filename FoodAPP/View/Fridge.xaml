@@ -4,19 +4,19 @@
              x:Class="FoodAPP.View.Fridge"
              Shell.NavBarIsVisible="False"
              Title="Fridge">
-    <Grid RowDefinitions="*,60" ColumnDefinitions="*,*,*">
+    <Grid RowDefinitions="*,60" ColumnDefinitions="*,*,*" BackgroundColor="#f3f5d0">
         <ScrollView Grid.Row="0" Grid.ColumnSpan="3">
             <Grid RowDefinitions="40,*">
-                <Label Grid.Row="0" HorizontalOptions="Center" VerticalOptions="Start" Margin="0">
+                <!--<Label Grid.Row="0" HorizontalOptions="Center" VerticalOptions="Start" Margin="0">
                     <Label.FormattedText>
                         <FormattedString>
                             <Span Text="Food" TextColor="#d4a373" FontAttributes="Bold" FontSize="30"/>
                             <Span Text="APP" TextColor="DarkGreen" FontAttributes="Bold" FontSize="30"/>
                         </FormattedString>
                     </Label.FormattedText>
-                </Label>
+                </Label>-->
                 <VerticalStackLayout Grid.Row="1">
-                    <Label Text="Fridge" FontSize="45" FontAttributes="Bold"/>
+                    <Label Text="Fridge" HorizontalOptions="Center" TextColor="DarkGreen" FontSize="36" FontAttributes="Bold"/>
                     <CollectionView x:Name="Prod" Margin="20" SelectionMode="Single" ItemsSource="{Binding Products}" SelectionChanged="Prod_SelectionChanged">
                         <CollectionView.ItemsLayout>
                             <LinearItemsLayout Orientation="Vertical" ItemSpacing="20"/>
@@ -48,12 +48,12 @@
                 </VerticalStackLayout>
             </Grid>
         </ScrollView>
-        <VerticalStackLayout Grid.Column="0" Grid.Row="1">
+        <VerticalStackLayout Grid.Column="0" Grid.Row="1" BackgroundColor="White">
             <Line BackgroundColor="LightGray" Margin="0,0,0,0"/>
             <Image Source="Images/fridge.png" HorizontalOptions="Center" VerticalOptions="Center" Margin="0,5,0,0"/>
             <Label Text="Fridge" TextColor="Green" FontSize="16" HorizontalTextAlignment="Center"/>
         </VerticalStackLayout>
-        <VerticalStackLayout Grid.Column="1" Grid.Row="2">
+        <VerticalStackLayout Grid.Column="1" Grid.Row="2" BackgroundColor="White">
             <Line BackgroundColor="LightGray" Margin="0,0,0,0"/>
             <Image Source="Images/cartgray.png" HorizontalOptions="Center" VerticalOptions="Center" Margin="0,5,0,0">
                 <Image.GestureRecognizers>
@@ -67,7 +67,7 @@
             </Label>
         </VerticalStackLayout>
         <Button Text="+" FontSize="40" BackgroundColor="Green" TextColor="White" CornerRadius="80" WidthRequest="80" HeightRequest="80" Margin="0,0,10,150" ZIndex="1" HorizontalOptions="End" Grid.Row="2" Grid.Column="2" Command="{Binding PlusCommand}"></Button>
-        <VerticalStackLayout Grid.Column="2" Grid.Row="2">
+        <VerticalStackLayout Grid.Column="2" Grid.Row="2" BackgroundColor="White">
             <Line BackgroundColor="LightGray" Margin="0,0,0,0"/>
             <Image Source="Images/usgray.png" HorizontalOptions="Center" VerticalOptions="Center" Margin="0,5,0,0">
                 <Image.GestureRecognizers>

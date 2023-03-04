@@ -1,4 +1,5 @@
-﻿using System;
+﻿using FoodAPP.View;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,11 +11,11 @@ namespace FoodAPP.ViewModel
     public class FoodAddingViewModel
     {   
 
-        ICommand BackCommand => new Command(OnBackClicked);
-
-        private async void OnBackClicked()
+        public ICommand Add => new Command(OnAddClicked);
+        private async void OnAddClicked()
         {
-            await Shell.Current.GoToAsync("..\\");
+            
+
         }
     }
 }

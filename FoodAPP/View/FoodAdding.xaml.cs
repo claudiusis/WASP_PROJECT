@@ -40,4 +40,8 @@ public partial class FoodAdding : ContentPage
     {
         Picker2.IsVisible = true;
     }
+    private async void AddClicked(object sendler, EventArgs e)
+    {
+        await Shell.Current.GoToAsync(nameof(Fridge));
+    }
 }
