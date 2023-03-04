@@ -3,10 +3,30 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="FoodAPP.View.FoodAdding"
              Title="FoodAdding">
-    <ContentPage.ToolbarItems >
-        <ToolbarItem Text="Product adding"></ToolbarItem>
-    </ContentPage.ToolbarItems>
     <VerticalStackLayout>
-        
+        <HorizontalStackLayout>
+        <Picker Title="Select a type" SelectedIndexChanged="Picker_SelectedIndexChanged" ItemsSource="{Binding Types}" SelectedItem="{Binding ProductType.Title}">
+            <Picker.Items>
+                <x:String>Молочка</x:String>
+                <x:String>Колбасы</x:String>
+                <x:String>Мясо</x:String>
+                <x:String>Птица</x:String>
+                <x:String>Рыба</x:String>
+            </Picker.Items>
+        </Picker>
+        <Picker Title="Select subtype" x:Name="Picker2" IsVisible="False" ItemsSource="{Binding Subtypes}" SelectedItem="{Binding ProductSubType.Title}">
+            <Picker.Items>
+                <x:String>Text</x:String>
+                <x:String>Text</x:String>
+                <x:String>Text</x:String>
+                <x:String>Text</x:String>
+                <x:String>Text</x:String>
+            </Picker.Items>
+        </Picker>
+        </HorizontalStackLayout>
+        <Entry Placeholder="Enter Title" Text="{Binding Product.Title}"/>
+        <DatePicker x:Name="Date1" MinimumDate="2021,01,01" DateSelected="Date1_DateSelected" Date="{Binding FridgeModel.StartDate}"></DatePicker>
+        <DatePicker x:Name="Date2" MaximumDate="2025,12,31" Date="{Binding FridgeModel.ExpirationDate}"></DatePicker>
+        <Entry Placeholder="Enter some annotation" Text="{Binding FridgeModel.Description}"/>
     </VerticalStackLayout>
 </ContentPage>

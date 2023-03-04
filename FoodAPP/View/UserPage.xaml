@@ -4,40 +4,40 @@
              Shell.NavBarIsVisible="False"
              x:Class="FoodAPP.View.UserPage"
              Title="UserPage">
-    <Grid RowDefinitions="*,60" ColumnDefinitions="*,*,*" >
-        <VerticalStackLayout VerticalOptions="Center" Grid.Row="0" Grid.ColumnSpan="3" BackgroundColor="#f3f5d0">
+    <Grid RowDefinitions="*,60" ColumnDefinitions="*,*,*" BackgroundColor="#f3f5d0">
+        <VerticalStackLayout VerticalOptions="Center" Grid.Row="0" Grid.ColumnSpan="3">
             <Label Text="Account" HorizontalOptions="Center" TextColor="DarkGreen" FontSize="36" FontAttributes="Bold"/>
-            <Label Text="Name" FontSize="24" FontAttributes="Bold" Margin="5,5,5,5" TextColor="DarkGreen"/>
-            <StackLayout Orientation="Horizontal">
-                <Frame CornerRadius="45" BorderColor="White" HasShadow="True" HorizontalOptions="FillAndExpand" HeightRequest="60" Margin="0" Padding="0">
-                    <Grid ColumnDefinitions="32,*" ColumnSpacing="10">
-                        <Image Source="Images/user.png" Margin="10,0,0,0"/>
+            <Label Text="Name" FontSize="30" FontAttributes="Bold" Margin="25,5,5,5" TextColor="DarkGreen"/>
+            <StackLayout Orientation="Horizontal" Margin="10,0,5,0">
+                <Frame CornerRadius="45" BorderColor="White" HasShadow="True" HorizontalOptions="FillAndExpand" MinimumWidthRequest="350" HeightRequest="60" Margin="0" Padding="0">
+                    <Grid ColumnDefinitions="48,*" ColumnSpacing="10">
+                        <Image Source="Images/user.png" HorizontalOptions="End"/>
                         <Label x:Name="name"  Grid.Column="1" TextColor="#38b000" FontSize="20" Margin="0" VerticalOptions="Center" Text="{Binding Name}"/>
                     </Grid>
                 </Frame>
             </StackLayout>
-            <Label Text="Surname" FontSize="24" FontAttributes="Bold" Margin="5,5,5,5" TextColor="DarkGreen"/>
-            <StackLayout Orientation="Horizontal">
-                <Frame CornerRadius="45" BorderColor="White" HasShadow="True" HorizontalOptions="FillAndExpand" HeightRequest="60" Margin="0" Padding="0">
-                    <Grid ColumnDefinitions="32,*" ColumnSpacing="10">
-                        <Image Source="Images/user.png" Margin="10,0,0,0"/>
+            <Label Text="Surname" FontSize="30" FontAttributes="Bold" Margin="25,5,5,5" TextColor="DarkGreen"/>
+            <StackLayout Orientation="Horizontal" Margin="10,0,5,0">
+                <Frame CornerRadius="45" BorderColor="White" HasShadow="True" HorizontalOptions="FillAndExpand" HeightRequest="60"  Margin="0" Padding="0">
+                    <Grid ColumnDefinitions="48,*" ColumnSpacing="10">
+                        <Image Source="Images/user.png" HorizontalOptions="End"/>
                         <Label x:Name="surname" Grid.Column="1" TextColor="#38b000" FontSize="20" Margin="0" VerticalOptions="Center" Text="{Binding Surname}"/>
                     </Grid>
                 </Frame>
             </StackLayout>
-            <Label Text="Email" FontSize="24" FontAttributes="Bold" Margin="5,5,5,5" TextColor="DarkGreen"/>
-            <StackLayout Orientation="Horizontal">
+            <Label Text="Email" FontSize="30" FontAttributes="Bold" Margin="25,5,5,5" TextColor="DarkGreen"/>
+            <StackLayout Orientation="Horizontal" Margin="10,0,5,0">
                 <Frame CornerRadius="45" BorderColor="White" HasShadow="True" HorizontalOptions="FillAndExpand" HeightRequest="60" Margin="0" Padding="0">
-                    <Grid ColumnDefinitions="32,*" ColumnSpacing="10">
-                        <Image Source="Images/email.png" Margin="10,0,0,0"/>
+                    <Grid ColumnDefinitions="48,*" ColumnSpacing="10">
+                        <Image Source="Images/email.png" HorizontalOptions="End"/>
                         <Label x:Name="mail" Grid.Column="1" TextColor="#38b000" FontSize="20" Margin="0" VerticalOptions="Center" Text="{Binding Mail}"/>
                     </Grid>
                 </Frame>
             </StackLayout>
-            <Image Source="Images/startimg.jpg" Aspect="AspectFit"/>
+            <Image Source="Images/startimg.jpg" Aspect="AspectFit" Margin="0,70,0,0"/>
         </VerticalStackLayout>
-       
-        <VerticalStackLayout Grid.Column="0" Grid.Row="1">
+   
+        <VerticalStackLayout Grid.Column="0" Grid.Row="1" BackgroundColor="White">
             <Line BackgroundColor="LightGray" Margin="0,0,0,0"/>
             <Image Source="Images/fridgegray.png" HorizontalOptions="Center" VerticalOptions="Center" Margin="0,5,0,0">
                 <Image.GestureRecognizers>
@@ -50,7 +50,7 @@
                 </Label.GestureRecognizers>
             </Label>
         </VerticalStackLayout>
-        <VerticalStackLayout Grid.Column="1" Grid.Row="2">
+        <VerticalStackLayout Grid.Column="1" Grid.Row="2" BackgroundColor="White">
             <Line BackgroundColor="LightGray" Margin="0,0,0,0"/>
             <Image Source="Images/cartgray.png" HorizontalOptions="Center" VerticalOptions="Center" Margin="0,5,0,0">
                 <Image.GestureRecognizers>
@@ -63,7 +63,7 @@
                 </Label.GestureRecognizers>
             </Label>
         </VerticalStackLayout>
-        <VerticalStackLayout Grid.Column="2" Grid.Row="2">
+        <VerticalStackLayout Grid.Column="2" Grid.Row="2" BackgroundColor="White">
             <Line BackgroundColor="LightGray" Margin="0,0,0,0"/>
             <Image Source="Images/us.png" HorizontalOptions="Center" VerticalOptions="Center" Margin="0,5,0,0"/>
             <Label Text="Account" TextColor="Green" FontSize="16" HorizontalTextAlignment="Center"/>

@@ -17,28 +17,31 @@
                 </Label>
                 <VerticalStackLayout Grid.Row="1">
                     <Label Text="Fridge" FontSize="45" FontAttributes="Bold"/>
-                    <CollectionView x:Name="Prod" Margin="20" SelectionMode="Single" >
+                    <CollectionView x:Name="Prod" Margin="20" SelectionMode="Single" ItemsSource="{Binding Products}" SelectionChanged="Prod_SelectionChanged">
                         <CollectionView.ItemsLayout>
                             <LinearItemsLayout Orientation="Vertical" ItemSpacing="20"/>
                         </CollectionView.ItemsLayout>
                         <CollectionView.ItemTemplate>
                             <DataTemplate>
-                                <StackLayout>
+                                <SwipeView>
+                                    <SwipeView.RightItems>
+                                        <SwipeItem Text="Delete" Command="{Binding SwipeCommand}"/>
+                                    </SwipeView.RightItems>
                                     <Frame BackgroundColor="LightGreen" CornerRadius="30">
                                         <Grid>
                                             <HorizontalStackLayout>
-                                                <Label Text=""/>
-                                                <Label Text=""/>
+                                                <Label Text="{Binding }"/>
+                                                <Label Text="{Binding }"/>
                                             </HorizontalStackLayout>
                                             <Label Text=""/>
                                             <Label Text=""/>
                                             <HorizontalStackLayout>
                                                 <Label Text=""/>
-                                                <Label Text=""/>
+                                                <Label x:Name="Dateofend" Text=""/>
                                             </HorizontalStackLayout>
                                         </Grid>
                                     </Frame>
-                                </StackLayout>
+                                </SwipeView>
                             </DataTemplate>
                         </CollectionView.ItemTemplate>
                     </CollectionView>
@@ -63,7 +66,7 @@
                 </Label.GestureRecognizers>
             </Label>
         </VerticalStackLayout>
-        <Button Text="+" FontSize="40" BackgroundColor="Green" TextColor="White" CornerRadius="80" WidthRequest="80" HeightRequest="80" Margin="0,0,10,150" ZIndex="1" HorizontalOptions="End" Grid.Row="2" Grid.Column="2"></Button>
+        <Button Text="+" FontSize="40" BackgroundColor="Green" TextColor="White" CornerRadius="80" WidthRequest="80" HeightRequest="80" Margin="0,0,10,150" ZIndex="1" HorizontalOptions="End" Grid.Row="2" Grid.Column="2" Command="{Binding PlusCommand}"></Button>
         <VerticalStackLayout Grid.Column="2" Grid.Row="2">
             <Line BackgroundColor="LightGray" Margin="0,0,0,0"/>
             <Image Source="Images/usgray.png" HorizontalOptions="Center" VerticalOptions="Center" Margin="0,5,0,0">

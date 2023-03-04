@@ -13,19 +13,21 @@ public partial class AppShell : Shell
         Routing.RegisterRoute(nameof(Signup), typeof(Signup));
         Routing.RegisterRoute(nameof(Fridge), typeof(Fridge));
         Routing.RegisterRoute(nameof(Cart), typeof(Cart));
+        Routing.RegisterRoute(nameof(FoodAdding), typeof(FoodAdding));
         Routing.RegisterRoute(nameof(UserPage), typeof(UserPage));
-        DateTime date = DateTime.Now;
-        var request = new NotificationRequest
-        {
-            NotificationId = 1,
-            Title = "WARNING",
-            Subtitle = "It's time to clean fridge",
-            Description = "WWWWW",
-            Schedule = new NotificationRequestSchedule
-            {
-                NotifyTime = date.AddSeconds(30),
-            }
-        };
-        LocalNotificationCenter.Current.Show(request);
+        
     }
+    static DateTime Date = DateTime.Now.Date;
+    static NotificationRequest request = new NotificationRequest
+    {
+        NotificationId = 1,
+        Title = "CHANGES IN FRIDGE",
+        Subtitle = "It's time to come back",
+        Description = "Somethig happened in fridge",
+        Schedule = new NotificationRequestSchedule
+        {
+            NotifyTime = Date.AddSeconds(30),
+        }
+    };
+    public static NotificationRequest Request => request;
 }

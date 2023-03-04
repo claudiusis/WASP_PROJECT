@@ -15,8 +15,7 @@ namespace FoodAPP
         public int ID_ofuser { get => SigninViewModel.user_id; }
         public int ID_ofproduct { get; set; }
         public DateTime StartDate { get; set; }
-        public DateTime ExpirationDate { get; set;}
-        public string Status { get; set; }
+        public DateTime ExpirationDate { get; set; }
         public string Description { get; set; }
 
     }

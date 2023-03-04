@@ -49,5 +49,10 @@ namespace FoodAPP
         {
             return _database.DeleteAsync(item);
         }
+
+        public Task<int> SaveProductType(ProductType productType)
+        {
+            return _database.InsertAsync(productType);
+        }
     }
 }

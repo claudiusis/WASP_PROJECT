@@ -12,14 +12,6 @@ namespace FoodAPP.ViewModel
 
     public class UserViewModel
     {
-        /* SignupModel signupModel;
-
-         public string Name { get; set; }
-         public string Surname { get; set; }
-         public string Email { get; set; }
-         public UserViewModel(DataBase data) {
-
-         }*/
         public ICommand CartCommand => new Command(OnCartClicked);
         public ICommand FridgeCommand => new Command(OnFridgeClicked);
 
