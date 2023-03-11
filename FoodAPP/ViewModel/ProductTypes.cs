@@ -10,9 +10,8 @@ namespace FoodAPP.ViewModel
 {
     class ProductTypes
     {
-        public static ObservableCollection<ProductType> Types { get; set; }
-
-        ProductTypes()
+        public ObservableCollection<ProductType> Types;
+        public void AddingDataTypes()
         {
             Types.Add(new ProductType() { Title = "Рыба" });
             Types.Add(new ProductType() { Title = "Птица" });
@@ -23,10 +22,6 @@ namespace FoodAPP.ViewModel
             Types.Add(new ProductType() { Title = "Консервы" });
             Types.Add(new ProductType() { Title = "Соусы" });
             Types.Add(new ProductType() { Title = "Замороженные продукты" });
-        }
-
-        private void AddingDataTypes()
-        {
             foreach (var type in Types)
             {
                 App.Database.SaveProductType(type);

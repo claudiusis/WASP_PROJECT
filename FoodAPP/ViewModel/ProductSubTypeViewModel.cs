@@ -10,9 +10,9 @@ namespace FoodAPP.ViewModel
 {
     public class ProductSubTypeViewModel
     {
-        static ObservableCollection<ProductSubType> Sybtypes { get; }
+        public ObservableCollection<ProductSubType> Sybtypes;
 
-        ProductSubTypeViewModel()
+        public void SaveSubtype()
         {
             Sybtypes.Add(new ProductSubType() { Title = "Виноград" });
             Sybtypes.Add(new ProductSubType() { Title = "Яблоки" });
@@ -46,10 +46,6 @@ namespace FoodAPP.ViewModel
             Sybtypes.Add(new ProductSubType() { Title = "Пельмени" });
             Sybtypes.Add(new ProductSubType() { Title = "Тесто" });
             Sybtypes.Add(new ProductSubType() { Title = "Мясо" });
-        }
-
-        private void SaveSubtype()
-        {
             int i = 1, j=0;
             foreach (var subType in Sybtypes)
             {

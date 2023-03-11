@@ -3932,7 +3932,11 @@ application_config:
 
 	.type	.L.autostr.8, @object
 .L.autostr.8:
+<<<<<<< HEAD
 	.asciz	"b6a4000e-acac-4cde-b322-97cd68b9fab9"
+=======
+	.asciz	"5eeb3266-40f2-4de2-a700-66fc3a53b87f"
+>>>>>>> foodadding
 	.size	.L.autostr.8, 37
 
 	.type	.L.autostr.9, @object
