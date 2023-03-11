@@ -15,15 +15,15 @@ public partial class Fridge : ContentPage
 	}
     protected override async void OnAppearing()
     {
-        Prod.ItemsSource = await App.Database.GetFoodNote();
+        Prod.ItemsSource = await App.Database.GetFoodNote(SigninViewModel.user_id);
         base.OnAppearing();
     }
     private async void Prod_SelectionChanged(object sender, SelectionChangedEventArgs e)
-     {
-         if (e.CurrentSelection!=null)
-         {
-             FridgeModel product = (FridgeModel)e.CurrentSelection.FirstOrDefault();
-             await Shell.Current.GoToAsync($"{nameof(FoodAdding)}?{nameof(FoodAdding.ProdId)}={product.ID.ToString()}");
-         }
+    {
+        if (e.CurrentSelection != null)
+        {
+            FridgeModel product = (FridgeModel)e.CurrentSelection.FirstOrDefault();
+            await Shell.Current.GoToAsync($"{nameof(FoodAdding)}?{nameof(FoodAdding.ProdId)}={product.ID.ToString()}");
+        }
     }
 }

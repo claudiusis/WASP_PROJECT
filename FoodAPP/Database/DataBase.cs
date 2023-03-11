@@ -28,11 +28,11 @@ namespace FoodAPP
             return _database.InsertAsync(loginData);
         }
         //Tasks for Fridge Table
-        public async Task<List<FridgeModel>> GetFoodNote()
+        public async Task<List<FridgeModel>> GetFoodNote(int idofuser)
         {
-            return await _database.Table<FridgeModel>().ToListAsync();
+            return await _database.Table<FridgeModel>().Where(i=> i.ID_ofuser==idofuser).ToListAsync();
         }
-        public  Task<FridgeModel> GetFoodNote(int id)
+        public  Task<FridgeModel> GetFoodNoteOne(int id)
         {
             return _database.Table<FridgeModel>().Where(i => i.ID == id).FirstOrDefaultAsync();
         }
@@ -54,9 +54,13 @@ namespace FoodAPP
         {
             return _database.InsertAsync(productType);
         }
-        public Task<ProductType> GetProdType(int id)
+        public async Task<List<ProductType>> GetProdType()
         {
-            return _database.Table<ProductType>().Where(i => i.ID == id).FirstOrDefaultAsync();
+            return await _database.Table<ProductType>().ToListAsync();
+        }
+        public Task<List<ProductSubType>> GetProdSybType(int id)
+        {
+            return _database.Table<ProductSubType>().Where(i => i.TypeID == id).ToListAsync();
         }
 
         public Task<int> SaveProdSubtype(ProductSubType subtype)
