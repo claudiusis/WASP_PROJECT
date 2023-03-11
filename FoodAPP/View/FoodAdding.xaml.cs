@@ -115,16 +115,11 @@ public partial class FoodAdding : ContentPage
         }
         Picker2.Items.Add("Другое");
     }
-<<<<<<< HEAD
     private async void SaveClicked(object sender, EventArgs e)
     {
         FridgeModel fridge = (FridgeModel)BindingContext;
         fridge.ID_ofuser = SigninViewModel.user_id;
         await App.Database.SaveItemAsync(fridge);
-=======
-    private async void AddClicked(object sendler, EventArgs e)
-    {
->>>>>>> 651bd9701fd0601046333e408ed7345374aef3f2
         await Shell.Current.GoToAsync(nameof(Fridge));
     }
     private async void DeleteClicked(object sender, EventArgs e)
